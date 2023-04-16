@@ -1,2 +1,2 @@
 # ProgettoTecnologieWeb
-Progetto per il corso di Tecnologie Web; uso del Laravel Framework
+Progetto per il corso di Tecnologie Web; uso del framework Laravel; 8; ...
