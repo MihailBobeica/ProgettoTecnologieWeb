@@ -4,8 +4,10 @@ Di seguito si riporta il calendario delle revisioni dei progetti didattici intra
 
 | Data      | Ora         | Gruppi | Aula  | Avanzamento Progetto |
 |-----------|-------------|--------|-------|----------------------|
+| 21 maggio |             | Tutti  |       |                      |
 | 3 maggio  | 10:30-13:30 | 1-11   | TEAMS | Prima Revisione      |
 | 15 maggio | 14:30-17:30 | 1-11   | 160/2 | Seconda Revisione    |
+| 29 maggio |             | Tutti  |       |                      |
 
 
 **La presenza** alle revisioni per tutti i membri dei gruppi convocati nei giorni indicati **è obbligatoria**. 
