@@ -1,0 +1,15 @@
+CUPON(_id, nome, azienda, descrizione, immagine, oggetto, categoria)
+PRODOTTO(_nome)
+SERVIZIO(_nome)
+CATEGORIA(_tipologia, _nome)
+
+UTENTE(_username, password, nome, cognome, genere, email, telefono, data_nascita)
+STAFF()
+AMMINISTRATORE()
+AZIENDA(_nome, localizzazione, logo, cupons[])
+
+
+
+
+- struttura piramidale dei livelli?
+- cupon e oggetti uno a uno? (cupon su categoria di oggetti)
