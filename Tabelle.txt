@@ -1,15 +1,34 @@
-CUPON(_id, nome, azienda, descrizione, immagine, oggetto, categoria)
-PRODOTTO(_nome)
-SERVIZIO(_nome)
-CATEGORIA(_tipologia, _nome)
+PROMOZIONE_ABBINATA(_id, promozioni[], descrizione, sconto_aggiuntivo)
 
-UTENTE(_username, password, nome, cognome, genere, email, telefono, data_nascita)
-STAFF()
-AMMINISTRATORE()
-AZIENDA(_nome, localizzazione, logo, cupons[])
+PROMOZIONE(_id, nome, descrizione, negozio_fisico(bool), azienda, immagine, prodotto, categoria, data_aggiunta, data_rimozione, data_modifica[], percentuale_sconto, sconto_assoluto)
+
+CUPON(_id, promozione(indice, p. o p abb.), data_emissione, data_scadenza, emessi, acquisiti)
+
+PRODOTTO(_nome, foto, descrizione, url, prezzo)
+
+SERVIZIO(_nome, url, descrizione, prezzo)
+
+CATEGORIA(_tipologia, _nome, descrizione)
+
+ACCOUNT(_username, password, nome, cognome, genere, email, telefono, data_nascita, data_eliminazione, data_creazione)
+
+_ACQUISTO(_utente, _cupon, data_acquisto)
+
+UTENTE(_account, cupon_preferiti[], aziende_preferite[], ultimo_accesso)
+
+STAFF(_account, cupon_creati[], cupon_modificati[], cupon_eliminati[], aziende_pertinenza[])
+
+AMMINISTRATORE(_account, staff_promozioni_abbinate)
+
+FAQ(_domanda, risposta)
+
+AZIENDA(_nome, localizzazione, logo, promozioni[], url)
 
 
 
 
-- struttura piramidale dei livelli?
+- struttura piramidale dei livelli? - NO
 - cupon e oggetti uno a uno? (cupon su categoria di oggetti)
+- un utente non può acquisire più di una volta un cupon
+- un amm non può avere "eliminato" =true
+- promozione=offerte promozionali
